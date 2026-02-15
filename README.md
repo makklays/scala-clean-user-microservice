@@ -32,9 +32,9 @@ In this microservice, you can use the following URLs:
 
 ```https://scala-user-microservice/api/v1/refresh-token```
 
-
 ### Features
 
+- Scala 3.3.1 + sbt 1.9.9
 - Authentication and authorization
 - JWT token issuance and validation
 - Refresh token mechanism

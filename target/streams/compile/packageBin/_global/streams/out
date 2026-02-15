@@ -1,0 +1,27 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/scala-clean-user-microservice_3-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/main$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/main$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/main$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/cards.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images/cards.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/banco2.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images/banco2.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/banco1.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images/banco1.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/banco4.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images/banco4.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/banco3.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images/banco3.jpg[0m
+[0m[[0m[0mdebug[0m] [0m[0m	images/santander-11.png[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/alexander/IdeaProjects/scala-clean-user-microservice/target/scala-3.3.1/classes/images/santander-11.png[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

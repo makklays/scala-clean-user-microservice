@@ -1,4 +1,3 @@
-package com.techmatrix18
 
 /**
  * The main entry point of the application.
@@ -10,6 +9,11 @@ package com.techmatrix18
  */
 @main
 def main(): Unit = {
-  println("Hello world!")
+  println("Hello world, from Scala!")
+  hello("TechMatrix18")
+}
+
+def hello(name: String): Unit = {
+  println(s"Hello, $name!")
 }
 

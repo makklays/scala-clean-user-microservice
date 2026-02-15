@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-clean-user-microservice.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-clean-user-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-clean-user-microservice-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-clean-user-microservice-build.iml" />
     </modules>
   </component>
 </project>

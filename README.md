@@ -32,6 +32,7 @@ In this microservice, you can use the following URLs:
 
 ```https://scala-user-microservice/api/v1/refresh-token```
 
+
 ### Features
 
 - Authentication and authorization

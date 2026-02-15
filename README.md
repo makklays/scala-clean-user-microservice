@@ -25,12 +25,20 @@ This microservice issues a JWT token (signed with a private key) to the user. Th
 to access data from other microservices. The user sends the JWT token to the API Gateway microservice, 
 which verifies the JWT on its side using the public key. If the JWT token has expired, it is refreshed 
 using the Refresh Token.
-
+ 
 In this microservice, you can use the following URLs:
 
-```https://scala-user-microservice/api/v1/login```
+```GET https://scala-user-microservice/api/v1/login```
 
-```https://scala-user-microservice/api/v1/refresh-token```
+```GET https://scala-user-microservice/api/v1/refresh-token```
+
+```GET https://scala-user-microservice/api/v1/users/{id}```
+
+```POST https://scala-user-microservice/api/v1/users/add```
+
+```PATCH https://scala-user-microservice/api/v1/users/{id}```
+
+```DELETE https://scala-user-microservice/api/v1/users/{id}```
 
 ### Features
 

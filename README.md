@@ -1,4 +1,4 @@
-# Scala Clean User Microservice
+# 🧗‍Scala Clean User Microservice
 
 <p align="left">
     <!--img src="./src/main/resources/images/schema-user-microservice.png" /-->

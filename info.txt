@@ -2,3 +2,45 @@
 Запуск в терминале, в корне проекта (так как нет пакета):
 sbt run
 
+Play Framework — это веб-фреймворк для Scala и Java, который позволяет создавать:
+- Веб-приложения (сайт, веб-сервис, API)
+- Реактивные приложения (high-performance, асинхронные)
+- RESTful API
+- Реaltime приложения (например, чат, стриминг данных)
+
+Какие программы пишут на Scala + Play ?
+
+Примеры типов программ:
+1. Веб-сервисы и REST API
+- Сервисы для фронтенда (React, Angular, Vue)
+- Мобильные backend API
+  Пример: API для интернет-магазина, социальной сети
+2. Реактивные системы
+- Чат-приложения
+- Стриминговые сервисы (live data feed, уведомления)
+3. Бизнес-приложения
+- CRM, ERP системы с веб-интерфейсом
+4. Системы с высокой нагрузкой
+- Приложения, которые должны обрабатывать тысячи запросов в секунду
+- Например: биржевые платформы, аналитика в реальном времени
+
+Пример компаний, которые используют Scala + Play:
+LinkedIn (частично)
+Coursera (API backend)
+The Guardian (новостной сайт)
+
+----------------------------------------------
+
+Как использовать
+import services.JwtService
+
+val accessToken = JwtService.createAccessToken("user123")
+val refreshToken = JwtService.createRefreshToken("user123")
+
+val maybeUserId = JwtService.validateToken(accessToken)
+maybeUserId match
+  case Some(userId) => println(s"Valid token for $userId")
+  case None => println("Invalid or expired token")
+
+----------------------------------------------
+

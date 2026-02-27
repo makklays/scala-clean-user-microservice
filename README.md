@@ -4,8 +4,8 @@
     <!--img src="./src/main/resources/images/schema-user-microservice.png" /-->
 </p>
 <p align="left">
-    <img src="./src/main/resources/images/banco4.jpg" width="170" />
-    <img src="./src/main/resources/images/banco1.jpg" width="170" />
+    <img src="./src/main/resources/images/team-lead.png" width="170" />
+    <img src="./src/main/resources/images/zio-scala3-spark.png" width="170" />
     <img src="./src/main/resources/images/banco3.jpg" width="170" />
     <img src="./src/main/resources/images/cards.jpg" width="170" /> 
 </p>
@@ -40,8 +40,38 @@ In this microservice, you can use the following URLs:
 
 ```DELETE https://scala-user-microservice/api/v1/users/{id}```
 
+### Structure of the project
+
+```
+scala-clen-user-microservice/
+├─ project/
+├─ src/
+│  ├─ main/
+│  │  ├─ scala/
+│  │  │  ├─ controllers/
+│  │  │  │  ├─ HomeController.scala
+│  │  │  │  └─ UserController.scala
+│  │  │  │
+│  │  │  ├─ models/
+│  │  │  │  └─ User.scala
+│  │  │  │
+│  │  │  ├─ services/
+│  │  │  │  └─ JwtService.scala
+│  │  │  │
+│  │  │  └─ Main.scala
+│  │  │
+│  │  └─ resources/
+│  │     └─ images/
+│  │     └─ application.conf
+│  │
+│  └─ test/
+│        └─ UserControllerSpec.scala
+└─ build.sbt
+```
+
 ### Features
 
+- Scala 3 + ZIO http + Spark + PostgreSQL 
 - Scala 3.3.1 + sbt 1.9.9
 - Authentication and authorization
 - JWT token issuance and validation

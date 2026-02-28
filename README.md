@@ -55,6 +55,9 @@ scala-clen-user-microservice/
 │  │  │  ├─ models/
 │  │  │  │  └─ User.scala
 │  │  │  │
+│  │  │  ├─ repositories/
+│  │  │  │  └─ UserRepository.scala
+│  │  │  │
 │  │  │  ├─ services/
 │  │  │  │  └─ JwtService.scala
 │  │  │  │

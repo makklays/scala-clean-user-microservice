@@ -80,3 +80,8 @@ scala-clen-user-microservice/
 - JWT token issuance and validation
 - Refresh token mechanism
 - User account management (CRUD operations)
+
+### Screenshot 
+
+<img src="./src/main/resources/images/screen.jpeg" /> 
+

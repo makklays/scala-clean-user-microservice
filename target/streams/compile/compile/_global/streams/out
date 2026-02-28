@@ -1,7 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /home/alexander/IdeaProjects/scala-clean-user-microservice/src/main/scala/Main.scala:35:6 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m      DataSourceLayer.live      [34m// Шар для підключення до БД (Hikari)[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      Not found: DataSourceLayer[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m[34m-- Info: /home/alexander/IdeaProjects/scala-clean-user-microservice/src/main/scala/repositories/UserRepository.scala:18:7 [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m18 |[0m    run([0m
+[0m[[0m[0minfo[0m] [0m[0m[34m[34m   |[0m    ^[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m   |[0mQuill Query (compiled in 175ms): SELECT x1.id, x1.name, x1.email, x1.password, x1.phone, x1.firstname, x1.lastname, x1.post_id AS postId, x1.depart_id AS departId, x1.role_id AS roleId FROM user x1 WHERE x1.id = ?[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m19 |[0m      query[[35mUser[0m][0m
+[0m[[0m[0minfo[0m] [0m[0m[34m20 |[0m        .filter(_.id == lift(id))[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m21 |[0m    ).map(_.headOption)[0m

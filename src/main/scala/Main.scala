@@ -17,14 +17,18 @@ import layers.DataSourceLayer
 
 object Main extends ZIOAppDefault {
 
-  val userController = UserController(???) // інстанс вашого репозиторію
-  val allRoutes = HomeController.routes ++ userController.routes
+  // Замість Http використовуємо Routes
+  val allRoutes: Routes[Any, Response] = Routes(
+    Method.GET / "hello" -> handler(Response.text("Hello ZIO HTTP 3.x!"))
+  )
 
+  // Main.scala
   override def run =
-    Server.serve(allRoutes.toHttpApp)
+    Server.serve(allRoutes) // Просто передайте об'єкт
       .provide(Server.defaultWithPort(8082))
 
 }
+
 
 /*
 object Main extends ZIOAppDefault {

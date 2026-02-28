@@ -83,5 +83,5 @@ scala-clen-user-microservice/
 
 ### Screenshot 
 
-<img src="./src/main/resources/images/screen.jpeg" /> 
+<img src="./src/main/resources/images/screen.png" /> 
 

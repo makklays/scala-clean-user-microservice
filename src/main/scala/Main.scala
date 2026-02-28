@@ -14,20 +14,51 @@ import zio.http._
 import repositories._
 import controllers._
 import layers.DataSourceLayer
+import io.getquill.jdbczio.Quill
+import io.getquill.SnakeCase
 
 object Main extends ZIOAppDefault {
 
-  // Замість Http використовуємо Routes
-  val allRoutes: Routes[Any, Response] = Routes(
-    Method.GET / "hello" -> handler(Response.text("Hello ZIO HTTP 3.x!"))
-  )
+  // Програма, яка збирає всі маршрути разом
+  val program = for {
+    // 1. Отримуємо репозиторій з ZIO-середовища
+    repo <- ZIO.service[UserRepository]
 
-  // Main.scala
+    // 2. Створюємо екземпляр контролера, передаючи йому репозиторій
+    userController = UserController(repo)
+
+    // 3. Об'єднуємо всі маршрути (HomeController + UserController)
+    allRoutes = HomeController.routes ++ userController.routes
+
+    // 4. Запускаємо сервер
+    _ <- ZIO.logInfo("Starting server on port 8082...")
+    _ <- Server.serve(allRoutes)
+  } yield ()
+
   override def run =
-    Server.serve(allRoutes) // Просто передайте об'єкт
-      .provide(Server.defaultWithPort(8082))
-
+    program.provide(
+      Server.defaultWithPort(8082),
+      UserRepositoryLive.layer,
+      DataSourceLayer.live, // Цей шар має надавати DataSource
+      Quill.Postgres.fromNamingStrategy(SnakeCase)
+    )
 }
+
+// work !!!
+/*object Main extends ZIOAppDefault {
+
+  // Об'єднуємо локальні маршрути та маршрути з HomeController
+  val allRoutes: Routes[Any, Response] =
+    Routes(
+      Method.GET / "main" -> handler(Response.text("Main page"))
+    ) ++ HomeController.routes
+
+  override def run =
+    Server.serve(allRoutes)
+      .provide(
+        Server.defaultWithPort(8082)
+      )
+}*/
 
 
 /*

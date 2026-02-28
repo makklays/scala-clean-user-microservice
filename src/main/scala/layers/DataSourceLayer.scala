@@ -9,9 +9,10 @@ object DataSourceLayer {
     ZIO.acquireRelease {
       ZIO.attempt {
         val config = new HikariConfig()
-        config.setJdbcUrl("jdbc:postgresql://localhost:5432/your_db")
-        config.setUsername("your_user")
-        config.setPassword("your_password")
+        config.setJdbcUrl("jdbc:postgresql://localhost:5432/scala_db") // назва бази
+        config.setUsername("admin") // юзер
+        config.setPassword("admin") // пароль
+        config.setDriverClassName("org.postgresql.Driver")
         new HikariDataSource(config)
       }
     } { ds =>

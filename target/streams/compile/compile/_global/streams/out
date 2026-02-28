@@ -1,7 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0m[34m[34m-- Info: /home/alexander/IdeaProjects/scala-clean-user-microservice/src/main/scala/repositories/UserRepository.scala:18:7 [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[34m18 |[0m    run([0m
-[0m[[0m[0minfo[0m] [0m[0m[34m[34m   |[0m    ^[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[34m   |[0mQuill Query (compiled in 175ms): SELECT x1.id, x1.name, x1.email, x1.password, x1.phone, x1.firstname, x1.lastname, x1.post_id AS postId, x1.depart_id AS departId, x1.role_id AS roleId FROM user x1 WHERE x1.id = ?[0m
-[0m[[0m[0minfo[0m] [0m[0m[34m19 |[0m      query[[35mUser[0m][0m
-[0m[[0m[0minfo[0m] [0m[0m[34m20 |[0m        .filter(_.id == lift(id))[0m
-[0m[[0m[0minfo[0m] [0m[0m[34m21 |[0m    ).map(_.headOption)[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m[34m-- Info: /home/alexander/IdeaProjects/scala-clean-user-microservice/src/main/scala/repositories/UserRepository.scala:22:7 [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m22 |[0m    run(query[[35mUser[0m].filter(_.id == lift(id))).map(_.headOption)[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m[34m   |[0m    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[34m   |[0mQuill Query (compiled in 169ms): SELECT x1.id, x1.name, x1.email, x1.password, x1.phone, x1.firstname, x1.lastname, x1.post_id AS postId, x1.depart_id AS departId, x1.role_id AS roleId FROM users x1 WHERE x1.id = ?[0m

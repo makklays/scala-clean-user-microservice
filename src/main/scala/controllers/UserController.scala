@@ -13,7 +13,11 @@ case class UserController(repo: UserRepository) {
           case Some(u) => Response.json(u.toString)
           case None => Response.status(Status.NotFound)
         }
-        .mapError(e => Response.status(Status.InternalServerError)) // Конвертуємо помилку БД у 500
+        .catchAll { e =>
+          // Можно залогировать ошибку:
+          println(s"Database error: $e")
+          ZIO.succeed(Response.status(Status.InternalServerError))
+        }
     }
   )
 

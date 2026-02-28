@@ -44,3 +44,8 @@ maybeUserId match
 
 ----------------------------------------------
 
+docker run --name my-scala-db \
+  -e POSTGRES_USER=admin \
+  -e POSTGRES_PASSWORD=admin \
+  -e POSTGRES_DB=scala_db \
+  -p 5432:5432 -d postgres
